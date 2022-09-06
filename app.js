@@ -3,8 +3,9 @@ const app = express();
 const port = 3000;
 const routePngnRtlh = require("./routes/penanganan-rtlh");
 const bodyParser = require("body-parser");
-const cors = require("cors");
 
+const cors = require("cors");
+app.use(cors());
 require("./utils/db");
 
 app.use(
@@ -12,6 +13,7 @@ app.use(
     extended: true,
   })
 );
+
 app.use(bodyParser.json());
 app.use("/penanganan-rtlh", routePngnRtlh);
 
