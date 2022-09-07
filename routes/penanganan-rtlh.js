@@ -9,14 +9,7 @@ router.post("/", async (req, res) => {
     tahun: req.body.tahun,
     kode_kelurahan: req.body.kode_kelurahan,
     kode_tahun_kelurahan: `${req.body.tahun}${req.body.kode_kelurahan}`,
-    apbn_bsps: req.body.apbn_bsps,
-    apbn_dak: req.body.apbn_dak,
-    apbd_provinsi: req.body.apbd_provinsi,
-    apbd_kab_kota: req.body.apbd_kab_kota,
-    dana_desa: req.body.dana_desa,
-    csr: req.body.csr,
-    csr: req.body.csr,
-    baznas_slash_upz: req.body.baznas_slash_upz,
+    sumber_dana: req.body.sumber_dana,
     keterangan: req.body.keterangan,
   });
 
@@ -49,14 +42,7 @@ router.put("/:pngnRtlhId", async (req, res) => {
         tahun: req.body.tahun,
         kode_kelurahan: req.body.kode_kelurahan,
         kode_tahun_kelurahan: `${req.body.tahun}${req.body.kode_kelurahan}`,
-        apbn_bsps: req.body.apbn_bsps,
-        apbn_dak: req.body.apbn_dak,
-        apbd_provinsi: req.body.apbd_provinsi,
-        apbd_kab_kota: req.body.apbd_kab_kota,
-        dana_desa: req.body.dana_desa,
-        csr: req.body.csr,
-        csr: req.body.csr,
-        baznas_slash_upz: req.body.baznas_slash_upz,
+        sumber_dana: req.body.sumber_dana,
         keterangan: req.body.keterangan,
       }
     );
